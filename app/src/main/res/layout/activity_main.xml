@@ -1,9 +1,10 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:padding="16dp">
 
 
     <TextView
@@ -12,57 +13,62 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="My Nanodegree Apps!"
         android:id="@+id/MainTitle"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp" />
+        android:paddingBottom="40dp"
+        android:paddingTop="20dp"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
         android:text="Spotify Streamer"
-        android:id="@+id/App1"
-        android:layout_below="@+id/MainTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="53dp" />
+        android:id="@+id/button_label_spotify_streamer"
+        android:background="#F08C35"
+        android:onClick="onClick" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
         android:text="Scores App"
-        android:id="@+id/App1"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/button_label_scores_app"
+        android:background="#F08C35"
+        android:onClick="onClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
         android:text="Library App"
-        android:id="@+id/App3"
-        android:layout_below="@+id/App1"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/button_label_library_app"
+        android:background="#F08C35"
+        android:onClick="onClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:text="Build It Bigger"
-        android:id="@+id/App4"
-        android:layout_below="@+id/App3"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/button_label_build_it_bigger"
+        android:background="#F08C35"
+        android:layout_margin="5dp"
+        android:onClick="onClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:text="XYZ Reader"
-        android:id="@+id/App5"
-        android:layout_below="@+id/App4"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/button_label_xyz_reader"
+        android:background="#F08C35"
+        android:layout_margin="5dp"
+        android:onClick="onClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/App5"
-        android:layout_alignRight="@+id/App5"
-        android:layout_alignEnd="@+id/App5" />
-</RelativeLayout>
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="capstone: my own app"
+        android:id="@+id/button_label_capstone"
+        android:background="#F44336"
+        android:textColor="#FFFFFF"
+        android:layout_margin="5dp"
+        android:onClick="onClick"/>
+
+</LinearLayout>
